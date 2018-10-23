@@ -1,0 +1,43 @@
+{
+  "name": "todo-webui",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "evergreen-ui": "^4.0.2",
+    "formik": "latest",
+    "react": "16.5.2",
+    "react-composer": "^5.0.0",
+    "react-dom": "16.5.2",
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.0.3",
+    "react-testing-library": "5.2.0",
+    "recompose": "^0.27.1",
+    "vague-time": "^2.4.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "flow-bin": "^0.83.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "flow": "flow",
+    "storybook": "start-storybook -p 9009 -s public"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

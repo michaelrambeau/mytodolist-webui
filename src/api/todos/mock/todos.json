@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "0001",
+    "title": "My first To do",
+    "body": "Here is the content!",
+    "created_at": "2018-10-10T12:44:10.946Z"
+  },
+  {
+    "_id": "0002",
+    "title": "My second To do",
+    "body": "Here is the content!",
+    "created_at": "2018-10-10T13:44:10.946Z"
+  }
+]

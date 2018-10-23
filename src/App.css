@@ -1,0 +1,24 @@
+/* body {
+  background-color: #ececec;
+} */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#layout {
+  display: flex;
+}
+#sidebar {
+  min-width: 120px;
+  padding-right: 2rem;
+}
+#main {
+  flex-grow: 1;
+  /* padding: 0 2rem; */
+}
+/* #main h2 {
+  margin-top: 0;
+} */
+.menu a {
+  text-decoration: none;
+}
