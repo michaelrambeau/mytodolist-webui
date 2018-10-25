@@ -1,4 +1,4 @@
-# ToDo Web UI
+# Mt Todo List Web UI
 
 A React application to manage Todo items, made with `create-react-app`, to showcase patterns about:
 
@@ -20,6 +20,12 @@ To connect the application to the "mock" API:
 
 ```
 REACT_APP_API=MOCK npm start
+```
+
+Launch the storybook (Visual testing):
+
+```
+npm run storybook
 ```
 
 ## Filesystem overview

@@ -7,25 +7,24 @@ import { Router } from "react-router-dom";
 import { createMemoryHistory } from "history";
 
 import todosSample from "../../../api/todos/mock/todos.json";
-import List from "./index";
-import createTodosApi from "../../../api/todos/mock/todos-api";
-
+import TodoView from "./index";
 const history = createMemoryHistory();
-const api = createTodosApi({ delay: 0 });
 
 const styles = { maxWidth: 800, margin: "0 auto" };
 
-storiesOf("Todo List", module)
+storiesOf("Todo View", module)
   .addDecorator(story => <div style={styles}>{story()}</div>)
-  .add("Empty List", () => (
-    <Router history={history}>
-      <List todos={[]} />
-    </Router>
-  ))
-  .add("Basic List", () => {
+  .add("View a Todo item (never updated)", () => {
     return (
       <Router history={history}>
-        <List todos={todosSample} />
+        <TodoView todo={todosSample[0]} onDelete={action("onDelete")} />
+      </Router>
+    );
+  })
+  .add("View a Todo item (updated)", () => {
+    return (
+      <Router history={history}>
+        <TodoView todo={todosSample[1]} onDelete={action("onDelete")} />
       </Router>
     );
   });

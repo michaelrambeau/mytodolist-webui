@@ -2,9 +2,9 @@ import React from "react";
 import { Pane, Paragraph, Button } from "evergreen-ui";
 import { Link as ReactRouterLink } from "react-router-dom";
 
-import PageTitle from "../atoms/PageTitle";
-import DateFromNow from "../atoms/DateFromNow";
-import TodoBodyReadonlyMode from "../atoms/TodoBodyReadonlyMode";
+import PageTitle from "../../atoms/PageTitle";
+import DateFromNow from "../../atoms/DateFromNow";
+import TodoBodyReadonlyMode from "../../atoms/TodoBodyReadonlyMode";
 
 const ToDoView = ({ todo, onDelete }) => {
   const { title, body, created_at, updated_at } = todo;

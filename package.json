@@ -19,20 +19,21 @@
     "vague-time": "^2.4.2"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.4.11",
-    "@storybook/addon-links": "^3.4.11",
-    "@storybook/addons": "^3.4.11",
-    "@storybook/react": "^3.4.11",
-    "babel-core": "^6.26.3",
-    "babel-runtime": "^6.26.0",
-    "flow-bin": "^0.83.0"
+    "flow-bin": "^0.83.0",
+    "@storybook/react": "4.0.0-alpha.25",
+    "@storybook/addon-actions": "4.0.0-alpha.25",
+    "@storybook/addon-links": "4.0.0-alpha.25",
+    "@storybook/addons": "4.0.0-alpha.25",
+    "babel-core": "next",
+    "babel-runtime": "next"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "flow": "flow",
-    "storybook": "start-storybook -p 9009 -s public"
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": [
     ">0.2%",

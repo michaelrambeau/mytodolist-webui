@@ -3,8 +3,8 @@ import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
 import { Pane, FormField, TextInput, Textarea, Button } from "evergreen-ui";
 
-import type { ToDo } from "../api/todos/todos-types";
-import ErrorMessage from "../atoms/ErrorMessage";
+import type { ToDo } from "../../api/todos/todos-types";
+import ErrorMessage from "../../atoms/ErrorMessage";
 
 const ToDoForm = (props: {
   isNewToDo: boolean,
@@ -16,7 +16,7 @@ const ToDoForm = (props: {
   errors: Object
 }) => {
   const {
-    // isNewToDo,
+    isNewToDo,
     values,
     handleSubmit,
     handleChange,
@@ -57,7 +57,7 @@ const ToDoForm = (props: {
           is={ReactRouterLink}
           type="button"
           appearance={"default"}
-          to={`/todos/${values._id}`}
+          to={isNewToDo ? `/todos` : `/todos/${values._id}`}
           marginRight={16}
         >
           CANCEL

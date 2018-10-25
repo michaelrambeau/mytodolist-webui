@@ -33,5 +33,8 @@ package-lock.json
 # Webpack monitor files
 monitor/
 
+# Storybook
+.cache/
+
 # WIP
 docs

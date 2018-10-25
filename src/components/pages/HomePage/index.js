@@ -48,6 +48,10 @@ const Home = props => {
               Form validation with{" "}
               <Link href="https://evergreen.segment.com/">Formik</Link>
             </ListItem>
+            <ListItem>
+              Visual testing{" "}
+              <Link href="https://storybook.js.org/">Storybook</Link>
+            </ListItem>
           </UnorderedList>
         </Pane>
         <Pane border={"default"} padding={16} marginTop={16} elevation={0}>
