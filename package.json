@@ -11,6 +11,7 @@
     "react": "16.5.2",
     "react-composer": "^5.0.0",
     "react-dom": "16.5.2",
+    "react-markdown": "^4.0.3",
     "react-router": "4.3.1",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.0.3",

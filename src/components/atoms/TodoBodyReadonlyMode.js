@@ -1,10 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Paragraph } from "evergreen-ui";
+import { Pane, Paragraph } from "evergreen-ui";
+import ReactMarkdown from "react-markdown";
+
+import "./markdown-body.css";
 
 const TodoBodyReadonlyMode = ({ children }) => {
   return children ? (
-    <Paragraph>{children}</Paragraph>
+    <Pane className="markdown-body">
+      <ReactMarkdown source={children} />
+    </Pane>
   ) : (
     <Paragraph color="muted">[No content]</Paragraph>
   );

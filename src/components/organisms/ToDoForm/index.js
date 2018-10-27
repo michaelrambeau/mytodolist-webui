@@ -41,7 +41,11 @@ const ToDoForm = (props: {
           width="100%"
         />
       </FormField>
-      <FormField label="Body" validationMessage={errors.body} isRequired>
+      <FormField
+        label="Body (Markdown supported!)"
+        validationMessage={errors.body}
+        isRequired
+      >
         <Textarea
           name="body"
           onChange={handleChange}
@@ -52,7 +56,7 @@ const ToDoForm = (props: {
         />
       </FormField>
       {errors.general && <ErrorMessage>{errors.general}</ErrorMessage>}
-      <Pane marginTop={8} display="flex" justifyContent="right">
+      <Pane marginTop={8} display="flex" justifyContent="flex-end">
         <Button
           is={ReactRouterLink}
           type="button"

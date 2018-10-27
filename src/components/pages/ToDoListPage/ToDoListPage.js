@@ -38,7 +38,7 @@ const List = ({ loading, error, data, total, setPage, query }) => {
 const TodoListPage = props => {
   return (
     <Fragment>
-      <PageTitle>Todo List</PageTitle>
+      <PageTitle>All Todo items</PageTitle>
       <Pane marginTop={16}>
         <List {...props} />
       </Pane>
