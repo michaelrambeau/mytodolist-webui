@@ -1,4 +1,4 @@
-# Mt Todo List Web UI
+# My Todo List Web UI
 
 A React application to manage Todo items, made with `create-react-app`, to showcase patterns about:
 
@@ -28,16 +28,24 @@ Launch the storybook (Visual testing):
 npm run storybook
 ```
 
+Run the unit tests
+
+```
+npm test
+```
+
 ## Filesystem overview
 
-- api: objects that interact with the external world, providing methods to fetch and update data (they are not React components).
-- components: stateless components used for presentation
+- components: stateless components used for presentation, split following the [Atomic Design](https://github.com/danilowoz/react-atomic-design) principles
+  - atoms
+  - molecules
+  - organisms
+  - templates: page layout components, used to generate pages. For example: there can be one template for all pages used by logged-in users, an other one for anonymous users  
+  - pages: top-level page components, associated to routes
 - containers: stateful components used to provide data: they get an `api` object as a props, fetch data, and provide data to their child components
-- i18n: translated strings used to handle internationalization.
-- pages: top-level page components, associated to routes
-- templates: page layout components, used to generate pages. For example: there can be one template for all pages used by logged-in users, an other one for anonymous users
 
-## Dependencies injection
+
+## About Dependency Injection
 
 `<App>` component (in `src/App.js` file) is the top level component.
 
